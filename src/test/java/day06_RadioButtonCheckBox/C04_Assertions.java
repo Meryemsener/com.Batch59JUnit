@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Assertions {
+public class C04_Assertions {
     WebDriver driver;
     @Before
     public void before() {
