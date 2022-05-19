@@ -146,11 +146,12 @@ public class Assertions {
         System.out.println(select.getFirstSelectedOption().getText());
         //  4.Tüm dropdown options'i yazdırın
         List<WebElement> tumOpsiyonlar= select.getOptions();
+        tumOpsiyonlar.stream().map(WebElement::getText).forEach(System.out::println);
 
-       for (WebElement each: tumOpsiyonlar
-       ) {
-                    System.out.println(each.getText());
-                }
+      // for (WebElement each: tumOpsiyonlar
+        //       ) {
+        //                    System.out.println(each.getText());
+        //                }
         //  5. Dropdown’un boyutunu bulun, Dropdown’da 4 öğe varsa konsolda True ,
         //  degilse False yazdırın.
         int dropdownBoyut= tumOpsiyonlar.size();
