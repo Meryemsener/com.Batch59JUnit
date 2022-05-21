@@ -30,7 +30,7 @@ public class C02_CheckBox {
     }
     @After
     public void after() {
-        driver.close();
+       // driver.close();
     }
     @Test
     public void checkboxTask() throws InterruptedException {
@@ -41,13 +41,13 @@ public class C02_CheckBox {
         WebElement checkBox2 = driver.findElement(By.xpath("(//input[@type='checkbox'])[2]"));
         //c. Checkbox1 seçili değilse onay kutusunu tıklayın
         Thread.sleep(3000);
-        if (!checkBox1.isSelected()){
+       if (!checkBox1.isSelected()){
             checkBox1.click();
         }
-        //d. Checkbox2 seçili değilse onay kutusunu tıklayın
+         //Checkbox2 seçili değilse onay kutusunu tıklayın
         Thread.sleep(3000);
         if (checkBox2.isSelected()){
-            checkBox2.click();
+     checkBox2.click();
         }
     }
 
