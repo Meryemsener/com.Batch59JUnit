@@ -15,13 +15,14 @@ public class C03_FileExist {
         System.out.println(System.getProperty("user.home"));
         // C:\Users\Lenovo  yani benim bilgisayarimin bana ozel kismini verdi
         // "C:\Users\Lenovo\Downloads"
+       ///Users/nacisener/IdeaProjects/com.Batch59JUnit/src/test/java/day11_Faker_Fie
         // C:\Users\ilhan\Downloads
         // //Users/apple/Downloads
         //C:\Users\HP\Downloads
         // homePath + "/Downloads"
         // Masa ustumuzdeki text dosyasinin varligini test edin
         // "C:\Users\Lenovo\Desktop\text.txt"
-        String dosyaYolu= System.getProperty("user.home")+ "\\Desktop\\text.txt";
+        String dosyaYolu= System.getProperty("user.home")+ "/Users/nacisener/Desktop/text.rtf";
         System.out.println(dosyaYolu);
         /*
         Bilgisayarimizdaki bir dosyanin varligini test etmek icin
