@@ -21,7 +21,7 @@ public class C02_TumSayfaScreenShot extends TestBase {
         DateTimeFormatter dtf= DateTimeFormatter.ofPattern("YYMMddHHmmss");
         String tarih = date.format(dtf);
 
-        File tumSayfaResim= new File("target/ekranGoruntuleri/tumSayfa"+tarih+".jpeg");
+        File tumSayfaResim= new File("target"+tarih+".jpeg");
         File geciciDosya= ts.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(geciciDosya,tumSayfaResim);
     }

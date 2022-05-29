@@ -1,19 +1,25 @@
 package day15_writeExcel_screenShot;
 
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.junit.Test;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class C01_WriteExcel {
+public class C01_WriteExcel{
     @Test
     public void writeExceltest() throws IOException {
         //1) Yeni bir Class olusturalim WriteExcel
         //2) Yeni bir test method olusturalim writeExcelTest()
         //3) Adimlari takip ederek 1.satira kadar gidelim
-        String dosyaYolu="src/resources/ulkeler.xlsx";
+        String dosyaYolu="src/main/resources/ulkeler.xlsx";
         FileInputStream fis=new FileInputStream(dosyaYolu);
         Workbook workbook= WorkbookFactory.create(fis);
+
+
         //4) 5.hucreye yeni bir cell olusturalim
         //5) Olusturdugumuz hucreye “Nufus” yazdiralim
         workbook
